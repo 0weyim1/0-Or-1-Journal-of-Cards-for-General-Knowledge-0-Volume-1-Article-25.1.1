@@ -1,0 +1,203 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in,left=1in,includefoot]{geometry}
+\usepackage[margin=1in,left=1in,includefoot]{geometry}
+\usepackage[tbtags]{amsmath}%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+ \usepackage{amsmath}
+ \usepackage{amsfonts}
+ \usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\everymath{\displaystyle}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}%%palatino font for text
+\usepackage[euler-digits,euler-hat-accent]{eulervm}%euler for math font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{ragged2e}%%%%%%%%%%%%%%for \justify
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xcolor}
+\usepackage{booktabs,tabularx}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{graphicx} % Required for including images
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true]{hyperref}%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontspec}
+\usepackage[ethiop,main=english]{babel}
+\newfontface{\geezfont}{FreeSerif}
+\newenvironment{geez}{\geezfont}{}
+\lccode`፡=`፡  \catcode`፡=11
+\lccode`።=`። \catcode`።=11
+\babelprovide[import,
+  onchar = fonts ids,
+  typography/intraspace = 0 .1 0,
+  typography/linebreaking = s, 
+  characters/ranges = 1200..139F 2D80..2DDF AB00..AB2F,
+  ]{amharic}
+\babelfont[amharic]{rm}{FreeSerif}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mystyle}%                % Name
+  {}%                                     % Space above
+  {}%                                     % Space below
+  {\itshape}%                             % Body font
+  {}%                                     % Indent amount
+  {\bfseries}%                            % Theorem head font
+  {.}%                                    % Punctuation after theorem head
+  { }%                                    % Space after theorem head, ' ', or \newline
+  {}%                                     % Theorem head spec (can be left empty, meaning `normal')
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{mystyle}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{solution}{Solution}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{amharicdefinition}{\begin{geez}ትርጉም\end{geez}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+\numberwithin{proposition}{section}
+\numberwithin{example}{section}
+\numberwithin{remark}{section}
+\numberwithin{lemma}{section}
+\numberwithin{corollary}{section}
+\numberwithin{definition}{section}
+\numberwithin{amharicdefinition}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[shortlabels]{enumitem}
+\usepackage{soul}%%for highlighting texts and equations begin inside $$..\hl{some text here}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}%%to highlight math equations which is inside \begin{equation}...\end{equation}
+\usepackage{authblk}
+\title{
+{\large General Knowledge 0.2 For Pin Number 6}
+}
+\author[1,2,$*$]{\small Dagnachew Jenber}
+%\author[3]{second author name}
+%\author[4]{third author name}
+\affil[1]{ Department of Mathematics, Bahir Dar University, Bahir Dar, Ethiopia.}
+\affil[2]{Department of Mathematics, Addis Ababa Science and Technology University, Addis Ababa, Ethiopia.}
+%\affil[3]{second author affilation}
+%\affil[4]{third author affiliation}
+\affil[$*$]{Corresponding author: Dagnachew Jenber, dagnachew.Jenber@aastu.edu.et}
+%\date{}                     %% if you don't need date to appear
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+\usepackage{xhfill}
+\setlength{\parindent}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[backend=bibtex,maxnames=1000,minnames=10,maxalphanames=1000,
+minalphanames=10,style=numeric,sorting=anyt,firstinits=true]{biblatex}
+\DeclareNameAlias{default}{last-first}
+\addbibresource{volume-1-article-25.1.1.bib}
+\renewbibmacro{in:}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[tbtags]{amsmath}%%%%%
+\usepackage{geometry}
+\usepackage{graphicx}
+\makeatletter         
+\def\@maketitle{
+\raggedright
+\begin{center}
+{\large \bfseries \sffamily \@title }\\[1.5ex]
+{  \@author}\\[8ex]
+\end{center}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand\tableofcontents{%
+  \null\hfill\textbf{\Large\contentsname}\hfill\null\par
+  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
+  \@starttoc{toc}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\fontfamily{kpfonts}
+\hypersetup{
+  colorlinks,
+  citecolor=red,
+  linkcolor=red,
+  urlcolor=blue}
+
+  \hypersetup{
+  citebordercolor=red,
+  filebordercolor=red,
+  linkbordercolor=blue
+}
+\centering
+{\bf Abstract}
+\justify
+This work presents 22 number of cards from different discplines focused on lower grade english, amharic, geez, physics, biology, chemistry and mathematics subject.
+\section{\begin{geez}መግቢያ\end{geez}}
+\label{S:2}
+አሁን ባለንበት ዘመን የአንባቢያን ማህበረሰብ እየቀነሰ መምጣት አሳሳቢ ደረጃ ላይ ደርሷል። በብዙ ምክኒያት ሰወች ቁጭ ብለው
+ማንበብ የተውበት ጊዜ ነው። ለምሳሌ ጠቃሚ ያልሆነ ሶሻል
+ሚዲያ ላይና በአልባሌ ቦታወች ጊዜን ማጥፋት ከብዙወቹ ትንሾቹ ምክኒያቶች ናቸው። በ2017 ዓ.ም ዳኛቸው ለዚህ የሚሆን መፍትሄ ብሎ ያቀረበው 0 ወይም 1 ጨዋታ በሚል ርእስ የተዘጋጀ ትልቅ አክሲዮን ማህበር አለ። ይህ አክሲዮን ማህበር ከላይ የተጠቀሰውን ችግር በሚከተሉት መልኩ መፍታት ይቻላል ብሎ ያምናል። በዚህ ፅሁፍ ውስጥ የተካተተው መፍትሄ አሳማኝ ሆኖ አግኝተነዋል (ለበለጠ መረጃ የ 0 ወይም 1 መመስረቻ ፅሁፍን ይመልከቱ)። በዚህ አክሲዮን ማህበር የቀረበውን መፍትሄ ባጭሩ እንደሚከተለው አስቀምጠነዋል። 
+\begin{enumerate}
+\item[(1)] ማንበብን ወይም ጥናትን መዝናኛና ገንዘብ ማግኛ እንዲሁም ደግሞ ሽልማት የሚያስገኝ ማድረግ። ከማጥኛ ወይም አዲስ እውቀትን ከማግኛ  ዘዴወች ውስጥ አንደኛው ነገሮችን በተመሳሳያቸው በማዛመድ ማወቅ ነው። ለምሳሌ የአንድ እንግሊዘኛ ቃል ብዙ ተመሳሳይ ቃላቶች አሉት። እነሱን በማዛመድ ለመሸምደድ መሞከር ጥሩ ከሚባሉት ዘዴወች ውስጥ አንዱ ነው። ግን ደግሞ ይሄን ልምምዶሽ አይረሴ ለማድረግ በጨዋታ መልክ ሆኖ በቡድን እየተዝናኑና እየተወያዩ ሲሆን ተመራጭ ያደርገዋል።
+ካርድ በማዘጋጀት የእንግሊዘኛ ቃላቶችን ማጥናት በሚል ዙሪያ የተጠኑ ሳይንሳዊ ጥናቶች አሉ (ለምሳሌ፣ እነዚህን ይመልከቱ፣ 
+\cite{aslan2011teaching,azabdaftari2012comparing,bryson2012using,kosim2013improving,
+ nikoopour2014vocabulary,
+nugroho2012improving,
+saputri2017improving,senzaki2017reinventing,sitompul2013teaching,
+wahyuni2014flashcards})
+\item[(2)] ነገሮችን በአይነት አይነታቸው እያዛማዱ ማወቅ ያመራምራል፣ ጠያቂ ያደርጋል፣ ከጓደኛ ጋር ያከራክራል፣ ማመሳከሪያ መፅሃፍ ፍለጋ እስከመሄድ ድረስ ያደርሳል። እናም በዚህ መልክ ሲሆን ያን ነገር ለመርሳት ብዙ ጊዜ ይጨርሳል። 
+\item[(3)] ማዛመድን ደግሞ ከጓደኛ ጋር ሆነው እየተዝናኑ በጨዋታ መልክ ካደረጉትና እውቀትንና ማወቅን ለማበረታት ደግሞ ለአሸናፊው ጉርሻ በመስጠት ከሆነ ጨዋታውም ተወዳጅ ይሆናል ማለት ነው።
+\item[(4)] ከላይ ከ1-3 የተጠቀሱትን መፍትሔወች ለማከናወን የተለያዩ አይነት አዝናኝ ጨዋታወችን ማዘጋጀት።
+\end{enumerate}
+በዚህ ወረቀት ውስጥ፣ ለ 0 ወይም 1 ጨዋታ የሚሆን ካርድን አዘጋጅተናል። ያዘጋጀነው ካርድ ለጠቅላላ እውቀት 0.2 የሚሆን ሲሆን ከዚህ በፊት ያልተዘጋጁ ካርዶችን የሚዳስስ ነው። ያዘጋጀነውን የካርዶቹን መረጃ ባጭሩ እንደሚከተለው ገልፀነዋል። የመርፌ ብዛት=6 እና k=2 ቢሆኑ። ስለዚህ n=8*2+6=22 ይሆናል። ስለዚህ አጫዋች ካርዶችን ጨምሮ ባጠቃላይ 22 ካርዶች አሉ። ተጫዋች ካርዶች፤ $22-6=16$ ካርዶች ይሆናሉ፤ 16 ደግሞ የ 8 ብዜት ነው (ለበለጠ መረጃ የዜሮ ወይም አንድ መመስረቻ ፅሁፍን ይመልከቱ)።  አጫዋች ካርዶች የሚከተሉት ናቸው፤ Tense፣  Slope፣  Oscillation፣  Extinction፣ Solid፣  አነ ናቸው።
+\section{\begin{geez}አጫዋች ካርዶች (Jester Cards)\end{geez}}
+\label{S:2}
+\begin{definition}[Tense]
+In grammar, ``tense" refers to a category that expresses the time of an action, event, or state as described by a verb (see, Comrie, 1985 \cite{declerck1986reichenbach}).\\
+Example: The sentence ``She walks to school" is in the present tense, while "She walked to school" is in the past tense.
+\end{definition}
+\begin{definition}[Slope]
+In mathematics, the slope of a line is a measure of its steepness, defined as the ratio of the change in the $y$-coordinate to the change in the $x$-coordinate, that is, the slope of the change from $(x_1,y_1)$ to $(x_2,y_2)$ is given by $(y_2-y_1)/(x_2-x_1)$  (see, Stewart, 2016 \cite{stewart2016calculus}).\\
+Example: The slope of the line passing through $(1,2)$ and $(3,6)$ is $(6-2)/(3-1)=2$.
+\end{definition}
+\begin{definition}[Oscillation]
+In mathematics and physics, oscillation refers to any repetitive variation, typically in time, of a quantity around a central value or between two or more different states (see, Strogatz, 2018 \cite{strogatz2018nonlinear}).\\
+Example: A pendulum swinging back and forth exhibits oscillation.
+\end{definition}
+\begin{definition}[Extinction]
+In biology, extinction is the complete disappearance of a species from Earth, occurring when the last individual of the species dies (see, Ceballos et al., 2015 \cite{ceballos2017biological}).\\
+Example: The dodo (Raphus cucullatus) became extinct in the late 1600s due to human activities.
+\end{definition}
+\begin{definition}[Solid]
+In physics and materials science, a solid is a state of matter characterized by structural rigidity and resistance to changes in shape and volume (see, Callister \& Rethwisch, 2020 \cite{callister2020materials}).\\
+Example: Ice is a solid form of water.
+\end{definition}
+\begin{amharicdefinition}[አነ]
+\begin{geez}አነ ማለት የግእዝ ቃል ሲሆን ትርጉሙም እኔ ማለት ነው።\end{geez}
+\end{amharicdefinition}
+\section{\begin{geez}ተጫዋች ካርዶች ከነአጫዋቻቸው (Player Cards with their Jester)\end{geez}}
+\label{S:3}
+\begin{enumerate}
+\item Tense=Time=Period=ጊዜ
+\item Slope=Gradient=Incline=Steepness
+\item Oscillation=Vibration=fluctuation=Wave
+\item Extinction=Disappearance=Eradication=Elimination
+\item Solid=Firm=Rigid
+\item አነ=እኔ=Me
+\end{enumerate}
+\printbibliography
+\end{document}
